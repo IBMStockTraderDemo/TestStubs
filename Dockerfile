@@ -1,4 +1,4 @@
-from stocktraderdemo/testbase
+FROM stocktraderdemo/testbase
 
 ENV DISPLAY ""
 
