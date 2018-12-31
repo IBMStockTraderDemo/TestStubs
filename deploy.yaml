@@ -1,12 +1,15 @@
 apiVersion: batch/v1
 kind: Job
 metadata:
-  name: teststocktrader
+  name: portfoliotest
 spec:
   template:
     spec:
       containers:
-      - name: testtrader
+      - name: portfoliotest
         image: stocktraderdemo/portfoliotest
+        env:
+          - name: RATIONAL_LICENSE_FILE
+            value: 27000@rlks.rtp.raleigh.ibm.com
       restartPolicy: Never
   backoffLimit: 4
