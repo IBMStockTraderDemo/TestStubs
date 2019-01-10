@@ -4,7 +4,7 @@
 #  loop running the test scenario until removed
 #
 
-LOOPS= 100000
+LOOPS=100000
 
 /opt/IBM/RationalTestControlPanel/bin/startup.sh
 

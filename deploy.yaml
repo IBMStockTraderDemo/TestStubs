@@ -5,6 +5,9 @@ metadata:
 spec:
   replicas: 1
   template:
+    metadata:
+      labels:
+        app: portfolio-test
     spec:
       containers:
       - name: portfoliotest
@@ -13,4 +16,3 @@ spec:
         env:
           - name: RATIONAL_LICENSE_FILE
             value: 27000@rlks.rtp.raleigh.ibm.com
-      restartPolicy: Never
