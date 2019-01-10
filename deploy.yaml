@@ -1,8 +1,9 @@
-apiVersion: batch/v1
-kind: Job
+apiVersion: extensions/v1beta1
+kind: Deployment
 metadata:
-  name: portfoliotest
+  name: portfolio-test
 spec:
+  replicas: 1
   template:
     spec:
       containers:
@@ -13,4 +14,3 @@ spec:
           - name: RATIONAL_LICENSE_FILE
             value: 27000@rlks.rtp.raleigh.ibm.com
       restartPolicy: Never
-  backoffLimit: 4

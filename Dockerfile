@@ -3,7 +3,7 @@ FROM stocktraderdemo/testbase
 ENV DISPLAY ""
 
 COPY StockTrader.tar /root/StockTrader.tar
+COPY looptest.sh /root/looptest.sh
 RUN  cd /root &&  tar -xvf StockTrader.tar
 
-CMD  "sh" "/opt/IBM/RationalTestControlPanel/bin/startup.sh" && \ 
-     "/opt/IBM/RationalIntegrationTester/RunTests" "-noHTTP" "-environment" "ubuntu" "-project" "/root/StockTrader/StockTrader.ghp" "-run" "Suite" 
+CMD  "sh" "/root/looptest.sh"
