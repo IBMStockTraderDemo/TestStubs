@@ -10,7 +10,7 @@ LOOPS=100000
 
 while [ $LOOPS -gt 0 ]
 do
-  export JWT=$(curl -k -L -H \"Authorization: Basic YWRtaW46YWRtaW4=\" https://looper-service:9443/looper/jwt)
+  JWT=$(curl -k -L -H "Authorization: Basic YWRtaW46YWRtaW4=" https://looper-service:9443/looper/jwt)
 
   echo "JWT: " $JWT
 
