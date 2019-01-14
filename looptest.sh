@@ -14,6 +14,8 @@ do
 
   echo "JWT: " $JWT
 
+  export JWT
+
   /opt/IBM/RationalIntegrationTester/RunTests -noHTTP -environment IKS -environmentTags JWT -project /root/StockTrader/StockTrader.ghp -run Suite 
   sleep 30
 done
