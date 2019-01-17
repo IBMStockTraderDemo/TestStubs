@@ -17,5 +17,5 @@ do
   export JWT
 
   /opt/IBM/RationalIntegrationTester/RunTests -noHTTP -environment IKS -environmentTags env -project /root/StockTrader/StockTrader.ghp -run Suite 
-  sleep 30
+  sleep 10
 done
