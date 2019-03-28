@@ -19,7 +19,7 @@ spec:
         ports:
           - containerPort: 5443
       imagePullSecrets:
-        -name: iks-cr-registry-secret
+        - name: iks-cr-registry-secret
 ---
 #Deploy the service
 apiVersion: v1
