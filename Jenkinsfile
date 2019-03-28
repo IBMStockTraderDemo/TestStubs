@@ -8,13 +8,14 @@ pipeline {
        stage('Build') { 
             steps {
                 script {
+                    . /loginIks.sh
                     docker.build imagename
                 }
             }
        }  
        stage('Deliver') {
             steps{ 
-                sh '/push2dockerhub.sh $imagename'
+                sh '/push2iksRegistry.sh $imagename'
             }
        }
        stage('Deploy') {
