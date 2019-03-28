@@ -7,7 +7,7 @@ pipeline {
     stages {
        stage('Build') { 
             steps {
-                sh '. /loginIks.sh && docker build $imagename'
+                sh '. /loginIks.sh && docker build -t $imagename .'
             }
          }  
        stage('Deliver') {
