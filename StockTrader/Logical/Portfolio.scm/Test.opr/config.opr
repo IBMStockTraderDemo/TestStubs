@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?><editableResource createdTimestamp="1543266616211" createdUser="root" id="47e57472:167516c7d0a:-784e" type="operation_resource" updatedTimestamp="1543266616211" updatedUser="root" version="1.0">
+   <loggingConfiguration debug="false" writeStubEventsToDB="false"/>
+   <resourceConfig avgTime="0" color="152,85,212" dependencies="47e57472:167516c7d0a:-7963" invokeDynamicFormatterID="http.text.message.type" invokeEndDynamicFormatterID="http.text.message.type" invokeEndFormatterID="HTTP_Message" invokeEndTransportID="47e57472:167516c7d0a:-7963" invokeFormatterID="HTTP_Message" invokeTransportID="47e57472:167516c7d0a:-7963" maxTime="0" mepEndSchemaID="JSON" mepEndSchemaNodeFormatter="JSON.nodeformatter" mepEndSchemaroot="Object" mepEndUsed="true" mepType="IN_OUT" minTime="0" stubDynamicFormatterID="http.text.message.type" stubFormatterID="HTTP_Message" stubTransportID="47e57472:167516c7d0a:-7963">
+      <invokeHeaderNode meTy="Message" name="" type="12" version="1.2">
+         <fieldActionGroup>
+            <fieldAction enabled="false" type="1">
+               <fieldAction anyOrder="false" enabled="false" ignoreExtra="false" ignoreNonPresent="false" type="100"/>
+            </fieldAction>
+         </fieldActionGroup>
+         <_c meTy="String" name="Method" type="7" value="POST" version="1.2">
+            <fieldActionGroup>
+               <fieldAction type="0">
+                  <fieldAction exp="POST" type="0"/>
+               </fieldAction>
+            </fieldActionGroup>
+         </_c>
+         <_c meTy="String" name="URL" type="7" value="/portfolio/Test" version="1.2">
+            <fieldActionGroup>
+               <fieldAction type="0">
+                  <fieldAction exp="/portfolio/Test" type="0"/>
+               </fieldAction>
+            </fieldActionGroup>
+         </_c>
+         <_c meTy="Message" name="httpDetails" type="12" version="1.2">
+            <fieldActionGroup>
+               <fieldAction enabled="false" type="1">
+                  <fieldAction anyOrder="false" enabled="false" ignoreExtra="false" ignoreNonPresent="false" type="100"/>
+               </fieldAction>
+            </fieldActionGroup>
+            <_c meTy="String" name="Version" type="7" value="1.1" version="1.2">
+               <fieldActionGroup>
+                  <fieldAction type="0">
+                     <fieldAction exp="1.1" type="0"/>
+                  </fieldAction>
+               </fieldActionGroup>
+            </_c>
+            <_c meTy="Message" name="httpHeaders" type="12" version="1.2">
+               <fieldActionGroup>
+                  <fieldAction enabled="false" type="1">
+                     <fieldAction anyOrder="false" enabled="false" ignoreExtra="false" ignoreNonPresent="false" type="100"/>
+                  </fieldAction>
+               </fieldActionGroup>
+            </_c>
+         </_c>
+         <_c meTy="String" name="MessageType" type="7" value="http.text.message.type" version="1.2">
+            <fieldActionGroup>
+               <fieldAction type="0">
+                  <fieldAction exp="http.text.message.type" type="0"/>
+               </fieldAction>
+            </fieldActionGroup>
+         </_c>
+      </invokeHeaderNode>
+      <stubHeaderConfig>
+         <_c MessageType="http.text.message.type" Method="POST" URL="/portfolio/Test" allowSubPath="false" consumerType="Participate" filterHeaders="false" filterMethod="true" filterResourcePath="true"/>
+      </stubHeaderConfig>
+   </resourceConfig>
+</editableResource>

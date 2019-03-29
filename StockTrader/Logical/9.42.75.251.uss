@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?><editableResource createdTimestamp="1543266590970" createdUser="root" id="47e57472:167516c7d0a:-7876" selfDescribing="9.42.75.251" type="parameterized_url_schema" updatedTimestamp="1543266590970" updatedUser="root" version="1.0">
+   <loggingConfiguration debug="false" writeStubEventsToDB="false"/>
+   <resourceConfig schemaSourceTemplateName="URL">
+      <schemaSourceConfig name="9.42.75.251">
+         <url templateName="Test">
+            <path isParameterized="false" literal="/" parameterName="" type="7"/>
+            <path isParameterized="false" literal="portfolio" parameterName="" type="7"/>
+            <path isParameterized="false" literal="/" parameterName="" type="7"/>
+            <path isParameterized="false" literal="Test" parameterName="" type="7"/>
+            <query defaultValue="" isNameValuePair="true" isParameterized="true" isRequired="true" literalValue="IBM" parameterName="symbol" queryName="symbol" type="7"/>
+            <query defaultValue="" isNameValuePair="true" isParameterized="true" isRequired="true" literalValue="1" parameterName="shares" queryName="shares" type="7"/>
+         </url>
+      </schemaSourceConfig>
+   </resourceConfig>
+</editableResource>

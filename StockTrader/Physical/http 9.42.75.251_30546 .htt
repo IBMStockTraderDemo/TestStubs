@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><editableResource createdTimestamp="1543253713982" createdUser="root" id="-2e21aa93:167502152cf:-7df2" selfDescribing="http 9.42.75.251:30546 " type="http_transport" updatedTimestamp="1543253713982" updatedUser="root" version="1.0">
+   <documentation>
+      <description value="Stock Trader top level query"/>
+   </documentation>
+   <loggingConfiguration debug="false" writeStubEventsToDB="false"/>
+   <resourceConfig transportName="" transportTemplateName="HTTP">
+      <messageProperties ReasonPhrase="No Stub available that matches the request" clientConnectionsPerHost="100" credDomain="" credPassword="#com.ghc.1!06be" credPreemptive="false" credType="0" credUser="" httpHost="9.42.75.251" httpNtlmDomain="" httpPort="30546" httpProxyHost="" httpProxyPassword="#com.ghc.1!9533" httpProxyPort="" httpProxyUsername="" httpResourceRoot="" httpServerSocketBindAddressOverride="" httpServerSocketPortOverride="" httpSocketTimeout="" httpTimeoutResponseCode="503" httpVirtualHost="" recType="PROXY" useSsl="false" version="4">
+         <kerberos Anon="false" CStyle="Username / Password" Conf="false" Custom="true" Enabled="false" Integ="false" MutAuth="false" RepDet="false" SSO="false" SeqCheck="false"/>
+      </messageProperties>
+   </resourceConfig>
+</editableResource>
