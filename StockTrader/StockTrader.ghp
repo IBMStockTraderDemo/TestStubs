@@ -1,17 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?><_c buildID="I20180327_1117" certificateAuthority="KEY_1024_BITS" comments="Project created on November 26, 2018" creationVersion="9.2.0" domain="default" extDocPrefix="" name="StockTrader" owner="root" rulesCacheUri="%%PROJECT/ROOT%%Rules" uuid="00000167-5021-517f-0000-00b23e6090fa">
-   <rootEnvironmentConfig>
+   <rootEnvironmentConfig isOverridingSecretsNamespace="false" overridingSecretsNamespace="">
       <environmentVariable evdescription="" key="JWT" value=""/>
    </rootEnvironmentConfig>
    <dateTimeConfig date="yyyy/MM/dd" dateTime="dd-MMM-yyyy HH:mm:ss" time="HH:mm:ss.SSS"/>
-   <serverSettings ghRepositoryURL="https://localhost:5443/RTCP" trustSource="INBUILT_CA" trustStorePath="">
+   <serverSettings autoPublishing="false" ghRepositoryURL="https://localhost:5443/RTCP" trustSource="INBUILT_CA" trustStorePath="">
       <dbConnectionParameters maxConnections="5" poolName="DefaultPoolName">
-         <connectionParams CICSEnv="false" MVSEnv="false" ZOSEnv="false" driverClass="" password="#com.ghc.1!412e" recordFilters="" schema="" url="" user="">
-            <stubSettings maxProcCallCount="10000" maxResultSetRowCount="10000" maxRowCount="10000" password="#com.ghc.1!18fa" procedureLearningBehaviour="1" schema="" url="" useIntegratedDB="true" user=""/>
+         <connectionParams CICSEnv="false" MVSEnv="false" ZOSEnv="false" driverClass="" password="#com.ghc.1!66ab" recordFilters="" schema="" url="" user="">
+            <stubSettings maxProcCallCount="10000" maxResultSetRowCount="10000" maxRowCount="10000" password="#com.ghc.1!b89c" procedureLearningBehaviour="1" schema="" url="" useIntegratedDB="true" user=""/>
             <storedProcedureFilter catalogFilterEnabled="false" catalogFilterPattern="" procedureFilterEnabled="false" procedureFilterPattern="" schemaFilterEnabled="true" schemaFilterPattern="" storedProceduresRetrievalEnabled="false" useConnectionUsername="true"/>
             <timestampFormatting timestampFormatZero="false" timestampFormattingEnabled="false" timestampPrecision="9"/>
          </connectionParams>
       </dbConnectionParameters>
    </serverSettings>
+   <techPreview enabled="true" hostname="localhost" port="5443" projectId="-1" projectName="--No Project Selected--" trustSource="TRUST_ALL" trustStorePassword="#com.ghc.1!df25" trustStorePath=""/>
    <permissionsSettings autoLogin="true" host="" permFactId="rtcp.permissions.factory.none" port="389" pswd="2jmj7l5rSw0yVb/vlWAYkK/YBwk="/>
    <resultPublishers disableAll="false"/>
 </_c>
