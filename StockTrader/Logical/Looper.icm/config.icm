@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><editableResource createdTimestamp="1555280754463" createdUser="root" id="2abe139a:16a1de8eff9:-7d50" type="infrastructure_component_resource" updatedTimestamp="1555280754463" updatedUser="root" version="1.1">
+<?xml version="1.0" encoding="UTF-8"?><editableResource createdTimestamp="1555280754463" createdUser="root" id="2abe139a:16a1de8eff9:-7d50" type="infrastructure_component_resource" updatedTimestamp="1555326644848" updatedUser="root" version="1.1">
    <loggingConfiguration debug="false" writeStubEventsToDB="false"/>
    <resourceConfig infrastructureType="http_transport">
       <recordingSettings colour="124,199,255"/>
