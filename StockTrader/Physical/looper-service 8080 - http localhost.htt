@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?><editableResource createdTimestamp="1555324276844" createdUser="root" id="10578eeb:16a208b6651:-7e25" selfDescribing="looper-service 8080 - http localhost" type="http_transport" updatedTimestamp="1555324276844" updatedUser="root" version="1.0">
+   <loggingConfiguration debug="false" writeStubEventsToDB="false"/>
+   <resourceConfig transportName="looper-service 8080" transportTemplateName="HTTP"/>
+</editableResource>
