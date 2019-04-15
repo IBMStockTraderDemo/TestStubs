@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?><editableResource createdTimestamp="1555325112360" createdUser="root" id="10578eeb:16a208b6651:-7c84" selfDescribing="Looper 8080 IKS - http localhost" type="http_transport" updatedTimestamp="1555325112360" updatedUser="root" version="1.0">
+   <loggingConfiguration debug="false" writeStubEventsToDB="false"/>
+   <resourceConfig transportName="Looper 8080 IKS" transportTemplateName="HTTP"/>
+</editableResource>
