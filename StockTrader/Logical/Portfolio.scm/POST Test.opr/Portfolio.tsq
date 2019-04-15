@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><editableResource createdTimestamp="1543266616426" createdUser="root" id="47e57472:167516c7d0a:-7806" type="test_resource" updatedTimestamp="1547661759572" updatedUser="root" version="1.1">
+<?xml version="1.0" encoding="UTF-8"?><editableResource createdTimestamp="1543266616426" createdUser="root" id="47e57472:167516c7d0a:-7806" type="test_resource" updatedTimestamp="1555286629686" updatedUser="root" version="1.1">
    <loggingConfiguration debug="false" writeStubEventsToDB="false"/>
    <resourceConfig description="" name="">
       <testTree>
@@ -44,10 +44,10 @@
                               <fieldAction anyOrder="false" enabled="false" ignoreExtra="false" ignoreNonPresent="false" type="100"/>
                            </fieldAction>
                         </fieldActionGroup>
-                        <_c meTy="String" name="Authorization" sch="Http Publish" type="7" value="%%JWT%%" version="1.2">
+                        <_c meTy="String" name="Authorization" sch="Http Publish" type="7" value="%%myjwt%%" version="1.2">
                            <fieldActionGroup>
                               <fieldAction type="0">
-                                 <fieldAction exp="%%JWT%%" type="0"/>
+                                 <fieldAction exp="%%myjwt%%" type="0"/>
                               </fieldAction>
                            </fieldActionGroup>
                         </_c>

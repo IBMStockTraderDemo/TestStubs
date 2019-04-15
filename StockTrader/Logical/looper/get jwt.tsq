@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?><editableResource createdTimestamp="1555282563625" createdUser="root" id="2abe139a:16a1de8eff9:-7b13" type="test_resource" updatedTimestamp="1555286399570" updatedUser="root" version="1.1">
+   <loggingConfiguration debug="false" writeStubEventsToDB="false"/>
+   <resourceConfig description="" name="">
+      <testTree>
+         <editableResource id="2abe139a:16a1de8eff9:-7ab1" selfDescribing="Publish a message and wait for a response to be received.  This can then be validated accordingly." type="send_request_action" version="1.1">
+            <loggingConfiguration debug="false" writeStubEventsToDB="false"/>
+            <resourceConfig description="" formatter="HTTP_Message" name="&quot;Text&quot; on resource &quot;/looper/jwt&quot; using schema &quot;Text&quot; via &quot;looper-service&quot;" transport="2abe139a:16a1de8eff9:-7ba7">
+               <headerMessage type="12" version="1.2">
+                  <fieldActionGroup>
+                     <fieldAction enabled="false" type="1">
+                        <fieldAction anyOrder="false" enabled="false" ignoreExtra="false" ignoreNonPresent="false" type="100"/>
+                     </fieldAction>
+                  </fieldActionGroup>
+                  <_c meTy="String" name="MessageType" type="7" value="http.text.message.type" version="1.2">
+                     <fieldActionGroup>
+                        <fieldAction type="0">
+                           <fieldAction exp="http.text.message.type" type="0"/>
+                        </fieldAction>
+                     </fieldActionGroup>
+                  </_c>
+                  <_c meTy="String" name="Method" type="7" value="GET" version="1.2">
+                     <fieldActionGroup>
+                        <fieldAction type="0">
+                           <fieldAction exp="GET" type="0"/>
+                        </fieldAction>
+                     </fieldActionGroup>
+                  </_c>
+                  <_c meTy="String" name="URL" type="7" value="/looper/jwt" version="1.2">
+                     <fieldActionGroup>
+                        <fieldAction type="0">
+                           <fieldAction exp="/looper/jwt" type="0"/>
+                        </fieldAction>
+                     </fieldActionGroup>
+                  </_c>
+                  <_c meTy="Message" name="httpDetails" type="12" version="1.2">
+                     <fieldActionGroup>
+                        <fieldAction enabled="false" type="1">
+                           <fieldAction anyOrder="false" enabled="false" ignoreExtra="false" ignoreNonPresent="false" type="100"/>
+                        </fieldAction>
+                     </fieldActionGroup>
+                     <_c meTy="String" name="Version" type="7" value="" version="1.2">
+                        <fieldActionGroup>
+                           <fieldAction type="0">
+                              <fieldAction type="0"/>
+                           </fieldAction>
+                        </fieldActionGroup>
+                     </_c>
+                     <_c meTy="Message" name="httpHeaders" type="12" version="1.2">
+                        <fieldActionGroup>
+                           <fieldAction enabled="false" type="1">
+                              <fieldAction anyOrder="false" enabled="false" ignoreExtra="false" ignoreNonPresent="false" type="100"/>
+                           </fieldAction>
+                        </fieldActionGroup>
+                        <_c meTy="String" name="Authorization" type="7" value="Basic YWRtaW46YWRtaW4=" version="1.2">
+                           <fieldActionGroup>
+                              <fieldAction type="0">
+                                 <fieldAction exp="Basic YWRtaW46YWRtaW4=" type="0"/>
+                              </fieldAction>
+                           </fieldActionGroup>
+                        </_c>
+                     </_c>
+                     <_c meTy="Boolean" name="followRedirects" type="8" value="true" version="1.2">
+                        <fieldActionGroup>
+                           <fieldAction type="0">
+                              <fieldAction exp="true" type="0"/>
+                           </fieldAction>
+                        </fieldActionGroup>
+                     </_c>
+                  </_c>
+               </headerMessage>
+               <bodyMessage assocdefid="Text" name="Text" sch="Text" type="12" version="1.2">
+                  <fieldActionGroup>
+                     <fieldAction enabled="false" type="1">
+                        <fieldAction anyOrder="false" enabled="false" ignoreExtra="false" ignoreNonPresent="false" type="100"/>
+                     </fieldAction>
+                  </fieldActionGroup>
+               </bodyMessage>
+            </resourceConfig>
+         </editableResource>
+         <editableResource id="2abe139a:16a1de8eff9:-7aaf" selfDescribing="Receive and validate a response to the request you have sent." type="receive_reply_action" version="1.1">
+            <loggingConfiguration debug="false" writeStubEventsToDB="false"/>
+            <resourceConfig description="" formatter="HTTP_Message" name="&quot;Text&quot; using schema &quot;Text&quot;" sendRequestID="2abe139a:16a1de8eff9:-7ab1" transport="2abe139a:16a1de8eff9:-7ba7">
+               <headerMessage assocdefid="Http Receive Reply" meTy="Message" name="" sch="Http Receive Reply" type="12" version="1.2">
+                  <fieldActionGroup>
+                     <fieldAction enabled="false" type="1">
+                        <fieldAction anyOrder="false" enabled="false" ignoreExtra="false" ignoreNonPresent="false" type="100"/>
+                     </fieldAction>
+                  </fieldActionGroup>
+                  <_c meTy="String" name="StatusCode" sch="Http Receive Reply" type="7" version="1.2"/>
+                  <_c meTy="String" name="ReasonPhrase" sch="Http Receive Reply" type="7" version="1.2"/>
+                  <_c meTy="String" name="MessageType" sch="Http Receive Reply" type="7" version="1.2"/>
+                  <_c meTy="Date-Time" name="rcvdTimestamp" sch="Http Receive Reply" type="11" version="1.2"/>
+               </headerMessage>
+               <subconfig MessageType="http.text.message.type" _version="1.1" formatter="HTTP_Message" transport="2abe139a:16a1de8eff9:-7ba7"/>
+               <bodyMessage assocdefid="Text" name="Text" sch="Text" type="12" version="1.2">
+                  <fieldActionGroup>
+                     <fieldAction enabled="false" type="1">
+                        <fieldAction anyOrder="false" enabled="false" ignoreExtra="false" ignoreNonPresent="false" type="100"/>
+                     </fieldAction>
+                     <fieldAction enabled="false" type="1">
+                        <fieldAction enabled="false" type="5"/>
+                     </fieldAction>
+                     <fieldAction enabled="false" type="1">
+                        <fieldAction enabled="false" type="6" typeActionAllType="true" typeActionMetaType="false"/>
+                     </fieldAction>
+                     <fieldAction description="Store copy of field in tag 'Textjwt'" tN="Textjwt" type="2">
+                        <dataAction type="Copy"/>
+                     </fieldAction>
+                  </fieldActionGroup>
+                  <_c name="text" sch="Text" type="7" version="1.2">
+                     <fieldActionGroup>
+                        <fieldAction enabled="false" type="1">
+                           <fieldAction enabled="false" type="0"/>
+                        </fieldAction>
+                        <fieldAction enabled="false" type="1">
+                           <fieldAction enabled="false" type="5"/>
+                        </fieldAction>
+                        <fieldAction enabled="false" type="1">
+                           <fieldAction enabled="false" type="6" typeActionAllType="true" typeActionMetaType="false"/>
+                        </fieldAction>
+                        <fieldAction description="Store copy of field in tag 'myjwt'" tN="myjwt" type="2">
+                           <dataAction type="Copy"/>
+                        </fieldAction>
+                     </fieldActionGroup>
+                  </_c>
+                  <_c name="myjwt" sch="Text" type="7" version="1.2">
+                     <fieldActionGroup>
+                        <fieldAction enabled="false" type="1">
+                           <fieldAction enabled="false" type="0"/>
+                        </fieldAction>
+                        <fieldAction enabled="false" type="1">
+                           <fieldAction enabled="false" type="5"/>
+                        </fieldAction>
+                        <fieldAction enabled="false" type="1">
+                           <fieldAction enabled="false" type="6" typeActionAllType="true" typeActionMetaType="false"/>
+                        </fieldAction>
+                     </fieldActionGroup>
+                  </_c>
+               </bodyMessage>
+            </resourceConfig>
+         </editableResource>
+         <editableResource id="2abe139a:16a1de8eff9:-75ec" selfDescribing="The log actions enables you to output messages to console and a logging file." type="logging_action" version="1.0">
+            <loggingConfiguration debug="false" writeStubEventsToDB="false"/>
+            <resourceConfig append="true" description="" flush="true" loggingMessage="**MYJWT is %%myjwt%%  TEST %%Textjwt%%" name="**MYJWT is %%myjwt%%  TEST %%Textjwt%%" outputFile="" role="0"/>
+         </editableResource>
+      </testTree>
+      <tagDataStore inputMode="SELECT" outputMode="SELECT">
+         <tag defaultValue="" description="" name="myjwt">
+            <tagProps>
+               <prop key="interfaceInput" value="true"/>
+               <prop key="interfaceOutput" value="true"/>
+               <prop key="scopeExecution" value="true"/>
+            </tagProps>
+         </tag>
+         <tag defaultValue="NONE" description="" name="JWT">
+            <tagProps>
+               <prop key="overrideEnvironment" value="true"/>
+            </tagProps>
+         </tag>
+         <tag defaultValue="" description="" name="Textjwt"/>
+      </tagDataStore>
+      <testprops messageClearance="false"/>
+   </resourceConfig>
+</editableResource>

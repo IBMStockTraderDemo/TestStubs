@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><editableResource createdTimestamp="1543266616309" createdUser="root" id="47e57472:167516c7d0a:-783e" type="test_resource" updatedTimestamp="1547657745140" updatedUser="root" version="1.1">
+<?xml version="1.0" encoding="UTF-8"?><editableResource createdTimestamp="1543266616309" createdUser="root" id="47e57472:167516c7d0a:-783e" type="test_resource" updatedTimestamp="1555286719096" updatedUser="root" version="1.1">
    <loggingConfiguration debug="false" writeStubEventsToDB="false"/>
    <resourceConfig description="" name="">
       <testTree>
@@ -44,10 +44,10 @@
                               <fieldAction anyOrder="false" enabled="false" ignoreExtra="false" ignoreNonPresent="false" type="100"/>
                            </fieldAction>
                         </fieldActionGroup>
-                        <_c meTy="String" name="Authorization" sch="Http Publish" type="7" value="%%JWT%%" version="1.2">
+                        <_c meTy="String" name="Authorization" sch="Http Publish" type="7" value="%%myjwt%%" version="1.2">
                            <fieldActionGroup>
                               <fieldAction type="0">
-                                 <fieldAction exp="%%JWT%%" type="0"/>
+                                 <fieldAction exp="%%myjwt%%" type="0"/>
                               </fieldAction>
                               <fieldAction description="Store copy of field in tag 'JWT'" enabled="false" tN="JWT" type="2">
                                  <dataAction type="Copy"/>
@@ -89,7 +89,7 @@
          </editableResource>
          <editableResource id="47e57472:167516c7d0a:-7834" selfDescribing="Receive and validate a response to the request you have sent." type="receive_reply_action" version="1.1">
             <loggingConfiguration debug="false" writeStubEventsToDB="false"/>
-            <resourceConfig description="" formatter="HTTP_Message" name="&quot;Text&quot; using schema &quot;Text&quot;" sendRequestID="47e57472:167516c7d0a:-783a" transport="47e57472:167516c7d0a:-7963">
+            <resourceConfig description="" formatter="HTTP_Message" name="&quot;Text&quot; using schema &quot;Text&quot; timeout 5001ms" sendRequestID="47e57472:167516c7d0a:-783a" timeout="5001" transport="47e57472:167516c7d0a:-7963">
                <headerMessage assocdefid="Http Receive Reply" meTy="Message" name="" sch="Http Receive Reply" type="12" version="1.2">
                   <fieldActionGroup>
                      <fieldAction type="1">

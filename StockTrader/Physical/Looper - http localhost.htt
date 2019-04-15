@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?><editableResource createdTimestamp="1555280754518" createdUser="root" id="2abe139a:16a1de8eff9:-7d4f" selfDescribing="Looper - http localhost" type="http_transport" updatedTimestamp="1555280754518" updatedUser="root" version="1.0">
+   <loggingConfiguration debug="false" writeStubEventsToDB="false"/>
+   <resourceConfig transportName="Looper" transportTemplateName="HTTP"/>
+</editableResource>
