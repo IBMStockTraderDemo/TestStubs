@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><editableResource createdTimestamp="1543266616258" createdUser="root" id="47e57472:167516c7d0a:-784c" type="test_resource" updatedTimestamp="1555286719126" updatedUser="root" version="1.1">
+<?xml version="1.0" encoding="UTF-8"?><editableResource createdTimestamp="1543266616258" createdUser="root" id="47e57472:167516c7d0a:-784c" type="test_resource" updatedTimestamp="1555449269145" updatedUser="root" version="1.1">
    <loggingConfiguration debug="false" writeStubEventsToDB="false"/>
    <resourceConfig description="" name="">
       <testTree>
@@ -86,7 +86,7 @@
          </editableResource>
          <editableResource id="47e57472:167516c7d0a:-7842" selfDescribing="Receive and validate a response to the request you have sent." type="receive_reply_action" version="1.1">
             <loggingConfiguration debug="false" writeStubEventsToDB="false"/>
-            <resourceConfig description="" formatter="HTTP_Message" name="&quot;Text&quot; using schema &quot;Text&quot;" sendRequestID="47e57472:167516c7d0a:-7848" transport="47e57472:167516c7d0a:-7963">
+            <resourceConfig description="" formatter="HTTP_Message" name="&quot;Text&quot; using schema &quot;Text&quot; timeout 3000ms" sendRequestID="47e57472:167516c7d0a:-7848" timeout="3000" transport="47e57472:167516c7d0a:-7963">
                <headerMessage assocdefid="Http Receive Reply" meTy="Message" name="" sch="Http Receive Reply" type="12" version="1.2">
                   <fieldActionGroup>
                      <fieldAction type="1">
@@ -117,6 +117,19 @@
                         </fieldAction>
                      </filterActionGroup>
                   </_c>
+                  <_c meTy="String" name="MessageType" sch="Http Receive Reply" type="7" version="1.2">
+                     <fieldActionGroup>
+                        <fieldAction enabled="false" type="1">
+                           <fieldAction enabled="false" exp="http.text.message.type" type="0"/>
+                        </fieldAction>
+                     </fieldActionGroup>
+                     <filterActionGroup>
+                        <fieldAction enabled="false" type="1">
+                           <fieldAction enabled="false" exp="http.text.message.type" type="0"/>
+                        </fieldAction>
+                     </filterActionGroup>
+                  </_c>
+                  <_c meTy="Date-Time" name="rcvdTimestamp" sch="Http Receive Reply" type="11" version="1.2"/>
                   <_c meTy="Message" name="httpDetails" sch="Http Receive Reply" type="12" version="1.2">
                      <fieldActionGroup>
                         <fieldAction enabled="false" type="1">
@@ -204,21 +217,8 @@
                      </_c>
                      <_c meTy="Boolean" name="followRedirects" sch="Http Receive Reply" type="8" version="1.2"/>
                   </_c>
-                  <_c meTy="String" name="MessageType" sch="Http Receive Reply" type="7" version="1.2">
-                     <fieldActionGroup>
-                        <fieldAction enabled="false" type="1">
-                           <fieldAction enabled="false" exp="http.text.message.type" type="0"/>
-                        </fieldAction>
-                     </fieldActionGroup>
-                     <filterActionGroup>
-                        <fieldAction enabled="false" type="1">
-                           <fieldAction enabled="false" exp="http.text.message.type" type="0"/>
-                        </fieldAction>
-                     </filterActionGroup>
-                  </_c>
-                  <_c meTy="Date-Time" name="rcvdTimestamp" sch="Http Receive Reply" type="11" version="1.2"/>
                </headerMessage>
-               <subconfig MessageType="http.text.message.type" URL="" _version="1.1" allowSubPath="false" consumerType="Participate" filterHeaders="false" filterMethod="false" filterResourcePath="false" formatter="HTTP_Message" transport="47e57472:167516c7d0a:-7963"/>
+               <subconfig MessageType="http.text.message.type" _version="1.1" formatter="HTTP_Message" transport="47e57472:167516c7d0a:-7963"/>
                <bodyMessage assocdefid="Text" name="Text" sch="Text" type="12" version="1.2">
                   <fieldActionGroup>
                      <fieldAction type="1">
