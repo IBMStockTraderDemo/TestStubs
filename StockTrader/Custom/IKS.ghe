@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><editableResource createdTimestamp="1547406426202" createdUser="root" id="49662108:1684886a194:-7e48" type="environment_resource" updatedTimestamp="1555340575664" updatedUser="root" version="1.0">
+<?xml version="1.0" encoding="UTF-8"?><editableResource createdTimestamp="1547406426202" createdUser="root" id="49662108:1684886a194:-7e48" type="environment_resource" updatedTimestamp="1556462050985" updatedUser="root" version="1.0">
    <loggingConfiguration debug="false" writeStubEventsToDB="false"/>
    <resourceConfig isOverridingSecretsNamespace="false" overridingSecretsNamespace="">
       <evbindings>
