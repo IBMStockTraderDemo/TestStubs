@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><editableResource createdTimestamp="1555282563625" createdUser="root" id="2abe139a:16a1de8eff9:-7b13" type="test_resource" updatedTimestamp="1555326744758" updatedUser="root" version="1.1">
+<?xml version="1.0" encoding="UTF-8"?><editableResource createdTimestamp="1555282563625" createdUser="root" id="2abe139a:16a1de8eff9:-7b13" type="test_resource" updatedTimestamp="1576792020066" updatedUser="root" version="1.1">
    <loggingConfiguration debug="false" writeStubEventsToDB="false"/>
    <resourceConfig description="" name="">
       <testTree>
@@ -148,7 +148,7 @@
          </editableResource>
          <editableResource id="2abe139a:16a1de8eff9:-75ec" selfDescribing="The log actions enables you to output messages to console and a logging file." type="logging_action" version="1.0">
             <loggingConfiguration debug="false" writeStubEventsToDB="false"/>
-            <resourceConfig append="true" description="" flush="true" loggingMessage="**MYJWT is %%myjwt%%  TEST %%Textjwt%%" name="**MYJWT is %%myjwt%%  TEST %%Textjwt%%" outputFile="" role="0"/>
+            <resourceConfig append="true" description="" enabled="false" flush="true" loggingMessage="**MYJWT is %%myjwt%%  TEST %%Textjwt%%" name="**MYJWT is %%myjwt%%  TEST %%Textjwt%%" outputFile="" role="0"/>
          </editableResource>
       </testTree>
       <tagDataStore inputMode="SELECT" outputMode="SELECT">
